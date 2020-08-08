@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" lang="en-US">
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<title>Firefox Web Speech API: BOBBOT</title>
+<style>
+    body {
+        font-family: Helvetica, sans-serif;
+        font-size: 11pt;
+        padding: 5px;
+        margin-left: 150px;
+        margin-right: 150px;
+        background-color: lightblue;
+    }
+    h2 {
+        font-weight: normal;
+        font-size: 24pt;
+    }
+
+    #rcorners1 {
+    border-radius: 10px;
+    background: white;
+    padding: 20px;
+    width: 25vw;
+    margin: 0 auto;
+    height: 65vh;
+    overflow-y: scroll;
+    }
+
+    #microphone {
+    height: 5em;
+    width: 5em;
+    margin: 0 auto;
+    }
+
+    #micdiv {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    }
+
+    #rcorners2 {
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: 300;
+    }
+
+    #wrapper_voices {
+    margin: 0 auto;
+    width: 25vw;
+    text-align: center;
+    }
+
+    #status {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    height: 1vh;
+    }
+
+</style>
+</head>
+<body>
+    <h2><center>Firefox Web Speech API Chatbot [BOBBOT]</center></h2>
+    <br>
+    <form>
+    <div id="wrapper_voices">
+    <select id="voices">
+    </select>
+    </div>
+    <br><br>
+    <p id="rcorners1"></p>
+    <p id="status"></p>
+    <p id="micdiv"><img id="microphone" src="mic.png"/></p>
+    <script src="bobbot.js"></script>
+    </form>
+
+</body>
+</html>
